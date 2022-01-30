@@ -9,10 +9,11 @@ import java.util.Optional;
 
 public class MemberService {
 
-    private final MemberRepository memberRepository = new MemoryMemberRepository();
+    private final MemberRepository memberRepository;
 
     public MemberService(MemoryMemberRepository memberRepository) {
-    }
+        this.memberRepository = memberRepository;
+    } // 내가 직접 new에서 생성하는게 아니라 외부에서 넣어주도록 설계
 
     /**
      *  회원가입

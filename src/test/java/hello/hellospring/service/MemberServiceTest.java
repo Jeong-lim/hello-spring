@@ -17,7 +17,7 @@ class MemberServiceTest {
     public void beforeEach() {
         memberRepository = new MemoryMemberRepository();
         memberService = new MemberService(memberRepository);
-    }
+    } // test실행될 때마다 생성 시켜준다.
 
     @AfterEach
     public void afterEach() {
