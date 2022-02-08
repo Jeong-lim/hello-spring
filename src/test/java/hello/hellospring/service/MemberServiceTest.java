@@ -35,7 +35,7 @@ class MemberServiceTest {
         Member findMember = memberRepository.findById(saveId).get();
         assertEquals(member.getName(), findMember.getName());
     }
-
+    // memberService 재정비
     @Test
     public void 중복_회원_예외() throws Exception {
         //Given
