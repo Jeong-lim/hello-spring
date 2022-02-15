@@ -15,3 +15,7 @@ public class MemberController {
         this.memberService = memberService;
     } // constructor 단축키 Alt + insert
 }
+
+// Controller와 Service를 연결시켜줄 때 Autowired를 생성자에 쓰면 MemberController가
+// 생성이 될 때 Spring 빈에 등록되어있는 MemberService객체를 가져다가 넣어준다.
+// 밖에서 스프링이 넣어주는 것이다.
