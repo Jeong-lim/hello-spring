@@ -1,9 +1,13 @@
 package hello.hellospring.repository;
 
 import hello.hellospring.domain.Member;
+import org.springframework.stereotype.Repository;
 
 import java.util.*;
 
+
+// Controller를 통해서 외부 요청을 받고 Service에서 비즈니스 로직을 만들고 Repository에서 데이터를 저장을 하는것이 정형화된 패턴이다.
+@Repository
 public class MemoryMemberRepository implements MemberRepository{
 
     private static final Map<Long, Member> store = new HashMap<>();
