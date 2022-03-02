@@ -22,3 +22,5 @@ public class SpringConfig {
         return new JdbcMemberRepository(dataSource);
     }
 }
+
+// 실행하기전에 H2 database 실행해놔야 됌~!
