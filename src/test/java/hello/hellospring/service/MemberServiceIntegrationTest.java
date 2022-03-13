@@ -21,7 +21,7 @@ class MemberServiceIntegrationTest {
     @Autowired MemberRepository memberRepository; // 필요한거를 ingection하는 거 이기 때문에 autowired로 연결한다.
 
     @Test
-    public void 회원가입() throws Exception {
+    void 회원가입() {
         //Given
         Member member = new Member();
         member.setName("spring");
